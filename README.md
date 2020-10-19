@@ -1,2 +1,2 @@
-# Kinematics Dynamics
+# Kinematics / Dynamics
  
