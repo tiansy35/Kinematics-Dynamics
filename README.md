@@ -11,3 +11,9 @@ Contents:
    - The `dynamics.m` uses the Euler-Lagrange method to derive the closed-form equation of motion for the pendulum model. The symbolic expression has been copied to the `solution.m` script. Run `solution.m` directly to solve the ODE and plot for joint variable values w.r.t. time (assume torque = 0).
    - The other type of dynamics problem it solves is that when the functions of joint variables w.r.t. time is known. In this case, run `torque.m` to compute the desired torques to along this trajectory.
    - The code solves the dynamics problem of system DOF = 2, but it is easy to be revised for solving higher-order pendulum dynamics models. However, some matrix manipulation may be needed beforehand to simplify the computation since the differentiation in MATLAB takes a lot more time as the number of symbolic variables grow.
+3. Velocity kinematics for a mobile manipulator
+   - The mobile manipulator is a 4-joint manipulator with a mobile base (differential drive). The `jacobian.m` code stores the Jacobian matrix of the system, which is used to transform the end-effector velocity to each joint's velocity. The `main.m` simulates the motion and `animate.m` creates the animation.
+   - There are 4 types of tests you can run in `main.m`. Two of them are shown in the animation here. In these two tests, the end-effector draws a square shape. The velocity of each joint is computed and executed to achieve such desired motion.
+
+<img src="https://github.com/tiansy97/Mobile manipulator/test1.gif"> 
+<img src="https://github.com/tiansy97/Mobile manipulator/test2.gif"> 
