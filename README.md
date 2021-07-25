@@ -3,7 +3,7 @@
 Code developed while doing course assignments for the kinematics and dynamics of different robotic systems. 
 
 Contents:
-1. FK/IK for a 5-DOF [Lynxmotion](http://www.lynxmotion.com/c-130-al5d.aspx) manipulator
+1. FK/IK for a 5-DOF [manipulator](http://www.lynxmotion.com/c-130-al5d.aspx)
    - For forward kinematics, all the joint positions and transformation matrices are computed using DH method. 
    - For inverse kinematics, the code uses kinematic decoupling and has checked joint limits, feasibility, and considered other edge cases.
    - Call functions `calculateFK` and `calculateIK` to compute the results.
